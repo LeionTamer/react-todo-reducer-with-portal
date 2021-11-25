@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.hide {
+  display: none;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.addItemContainer {
+  padding: 10px;
+  background-color: bisque;
+
+  display: flex;
+}
+
+.addItemContainer > input[type="text"] {
+  height: 25px;
+  flex-grow: 2;
+}
+
+.addItemContainer > button {
+  width: 100px;
+  height: 25px;
+  margin: 0 2px;
+}
+
+.todoItem {
+  width: 100%;
+  min-height: 35px;
+  margin: 2px 0;
+  padding: 5px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.todoItem .done {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  justify-content: center;
+  min-width: 25px;
+}
+
+input[type="checkbox"] {
+  width: 80px;
+}
+
+.todoItem > .description {
+  margin: 5px;
+  flex-grow: 8;
+  color: green;
+}
+
+.todoItem > .delete {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  justify-content: center;
+  min-width: 65px;
+  color: yellow;
+  background-color: red;
+}
+
+.form {
+  min-height: 360px;
+}
